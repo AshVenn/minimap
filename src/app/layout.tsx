@@ -1,6 +1,8 @@
 "use client"
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider"
@@ -38,7 +40,8 @@ export default function RootLayout({
         <TooltipProvider>
           <div className="relative h-screen w-screen">
             {/* Sidebar as an overlay on top of the map */}
-            <div className="relative z-10 w-full h-full">{children}</div>
+            <div className="relative z-10 w-full h-full">{children}            <Analytics />
+            <SpeedInsights /></div>
           </div>
         </TooltipProvider></ThemeProvider>
       </body>

@@ -114,7 +114,7 @@ export default function MapComponent({ routes, setRouteInfo, resetMarkers }: Map
 
       map.fitBounds(routeLine.getBounds());
 
-      const distance = (response.trip.summary.length / 1000).toFixed(2) + " km";
+      const distance = (response.trip.summary.length).toFixed(2) + " km";
       const duration = (response.trip.summary.time / 60).toFixed(2) + " minutes";
       setRouteInfo({ distance, duration });
     }

@@ -2,6 +2,9 @@
   "name": "minivalhalla",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -23,7 +26,7 @@
     "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.438.0",
-    "next": "14.2.8",
+    "next": "14.2.35",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
